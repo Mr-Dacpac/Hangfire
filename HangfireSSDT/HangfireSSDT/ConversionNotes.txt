@@ -1,0 +1,20 @@
+
+Fork from Hangfire Github
+
+Create branch from tag 1.6.12
+
+Add this SSDT project
+	set database setting on project properties
+	set build output filename as desired for the dacpac
+
+Create DB from Hangfire\src\Hangfire.SqlServer\DefaultInstall.sql
+
+Import from that DB into this project
+
+Create delpoyment profile.xml
+
+create post-deployment script to insert schema version 5
+
+perform test deployment to compare schema and data for validation
+
+utilise the dacpac as desired: Hangfire\HangfireSSDT\HangfireSSDT\bin\Debug\Hangfire.dacpac
