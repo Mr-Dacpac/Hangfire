@@ -75,6 +75,7 @@
   <ItemGroup>
     <None Include="ConversionNotes.txt" />
     <None Include="Deployment\DB.Publish.xml" />
+    <None Include="ModificationNotes.txt" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="HangFire\Tables\HangFire.Schema.sql" />

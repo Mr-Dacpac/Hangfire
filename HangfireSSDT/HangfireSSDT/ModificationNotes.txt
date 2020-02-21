@@ -1,0 +1,13 @@
+
+==========================
+Branch: HangforeMod_1.6.12
+==========================
+
+Improved Job Method querying
+----------------------------
+
+Hangfire.Job add calculated column to extract the Job Method from the JSON
+	unfortuantely this reuqired some bad string manipulation for SQL2014
+
+Hangfire.Job add index on the above calculated column; JobMethod
+	add include columns for StateId & StateName to improve query performance
